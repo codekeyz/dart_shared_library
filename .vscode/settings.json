@@ -1,11 +1,17 @@
 {
-    "files.exclude": {
-        "**/.git": true,         // this is a default value
-        "**/.DS_Store": true,    // this is a default value
+  "files.exclude": {
+    "**/.git": true, // this is a default value
+    "**/.DS_Store": true, // this is a default value
 
-        "dart-sdk/": true
-    },
-    "dart.analysisExcludedFolders": [
-        "dart-sdk"
-    ]
+    "dart-sdk/": true,
+    "depot_tools/": true
+  },
+  "dart.analysisExcludedFolders": [
+    "dart-sdk",
+    "depot_tools"
+  ],
+  "files.associations": {
+    "iostream": "cpp",
+    "string": "cpp"
+  }
 }
