@@ -10,8 +10,8 @@
 #include <bin/dfe.h>
 #include <bin/file.h>
 #include <bin/gzip.h>
-#include <bin/loader.h>
 #include <bin/isolate_data.h>
+#include <bin/loader.h>
 #include <platform/utils.h>
 
 using namespace dart::bin;
@@ -93,7 +93,7 @@ bool OnIsolateInitialize(void** child_callback_data, char** error) {
   *child_callback_data = isolate_data;
 
   Dart_EnterScope();
-    
+
   const auto script_uri = isolate_group_data->script_url;
   // TODO
   /*const bool isolate_run_app_snapshot =

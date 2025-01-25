@@ -147,7 +147,7 @@ Future<bool> _fetchOrUpdateDartSdk() async {
 Future<String> _fetchRequestedDartVersion() async {
   final lines = await File('.dart_version').readAsLines();
   for (var line in lines) {
-    if (line.startsWith('#')) {
+    if (line.startsWith('#') || line.isEmpty) {
       continue;
     }
 
